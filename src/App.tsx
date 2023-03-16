@@ -5,7 +5,8 @@ import { Sentiment } from './cmps/sentiment';
 import RootLayout from './layout/root-layout';
 
 
-const OPENAI_API_KEY = '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'
+const OPENAI_API_KEY = process.env.REACT_APP_api_key
+console.log('OPENAI_API_KEY', OPENAI_API_KEY)
 interface Data {
   choices: [],
   created: number,
